@@ -15,6 +15,8 @@ use App\Http\Controllers\OneToOneController;
 */
 
 Route::get('one-to-one', [OneToOneController::class, 'oneToOne']);
+Route::get('one-to-one-inverse', [OneToOneController::class, 'oneToOneInverse']);
+Route::get('one-to-one-insert', [OneToOneController::class, 'oneToOneInsert']);
 
 Route::get('/', function () {
     return view('welcome');
